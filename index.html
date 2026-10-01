@@ -3,167 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Aslamee Jahir | Infrastructure Engineer</title>
+<title>Aslamee Jahir Portfolio</title>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f4f7fa;
-color:#333;
-}
-
-header{
 background:#0f172a;
 color:white;
-padding:80px 20px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
+background:linear-gradient(135deg,#0f172a,#2563eb);
 }
 
-header h1{
-font-size:48px;
-}
-
-header p{
-font-size:20px;
-margin-top:10px;
-color:#cbd5e1;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-padding:40px 0;
-}
-
-.card{
-background:white;
-padding:30px;
-margin-bottom:25px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-h2{
-color:#0f172a;
+.hero-content h1{
+font-size:70px;
 margin-bottom:15px;
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
+.hero-content p{
+font-size:24px;
+color:#cbd5e1;
 }
 
-.skill{
-background:#2563eb;
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:#38bdf8;
 color:white;
-padding:10px 15px;
-border-radius:20px;
+text-decoration:none;
+border-radius:30px;
 }
 
-.project{
-border-left:4px solid #2563eb;
-padding-left:15px;
-margin-top:15px;
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:40px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
 }
 
 footer{
-background:#0f172a;
-color:white;
 text-align:center;
-padding:20px;
-margin-top:40px;
+padding:30px;
+background:#020617;
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<div class="hero">
+<div class="hero-content">
 <h1>Aslamee Jahir</h1>
-<p>Infrastructure Engineer | Power BI Developer | VMware | Nutanix | Azure</p>
-</header>
+<p>Infrastructure Engineer | Power BI Developer | Nutanix | VMware</p>
+#projectsView Projects</a>
+</div>
+</div>
 
-<div class="container">
-
-<div class="card">
-<h2>About Me</h2>
+<section>
+<h2 class="section-title">About Me</h2>
 <p>
-Experienced Infrastructure Engineer with expertise in Power BI,
-Windows Server, VMware, Nutanix, AWS, Azure, Docker and IT Operations.
-Passionate about automation, cloud technologies and data visualization.
+Consultant at Dubai Airports specializing in Infrastructure,
+Power BI, VMware, Nutanix, Windows Server, Azure and Cloud Technologies.
 </p>
+</section>
+
+<section>
+<h2 class="section-title">Skills</h2>
+
+<div class="card-container">
+
+<div class="card">Power BI</div>
+<div class="card">SQL</div>
+<div class="card">VMware</div>
+<div class="card">Nutanix</div>
+<div class="card">Windows Server</div>
+<div class="card">Azure</div>
+<div class="card">AWS</div>
+<div class="card">Docker</div>
+
 </div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="card-container">
 
 <div class="card">
-<h2>Technical Skills</h2>
-
-<div class="skills">
-<span class="skill">Power BI</span>
-<span class="skill">SQL Server</span>
-<span class="skill">Windows Server</span>
-<span class="skill">VMware</span>
-<span class="skill">Nutanix</span>
-<span class="skill">Azure</span>
-<span class="skill">AWS</span>
-<span class="skill">Docker</span>
-<span class="skill">PowerShell</span>
-<span class="skill">Active Directory</span>
-</div>
-
-</div>
-
-<div class="card">
-<h2>Certifications</h2>
-
-<ul>
-<li>Nutanix Certified Associate (NCA)</li>
-<li>Nutanix Certified Professional (Add when completed)</li>
-<li>Microsoft Certifications</li>
-</ul>
-
-</div>
-
-<div class="card">
-<h2>Projects</h2>
-
-<div class="project">
 <h3>Power BI Infrastructure Dashboard</h3>
-<p>Developed dashboards for server inventory, VM monitoring and infrastructure reporting.</p>
-</div>
-
-<div class="project">
-<h3>Power BI Gateway Deployment</h3>
-<p>Implemented On-Premises Data Gateway for scheduled refresh and secure data access.</p>
-</div>
-
-<div class="project">
-<h3>VM Infrastructure Management</h3>
-<p>Managed VMware and Nutanix virtual infrastructure environments.</p>
-</div>
-
+<p>Server inventory, VM monitoring and reporting dashboard.</p>
 </div>
 
 <div class="card">
-<h2>Contact</h2>
+<h3>Power BI Gateway Deployment</h3>
+<p>Configured enterprise gateway for automated refresh.</p>
+</div>
 
-<p><strong>Email:</strong> your-email@domain.com</p>
-<p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
-
+<div class="card">
+<h3>Nutanix & VMware Administration</h3>
+<p>Virtualization and infrastructure management.</p>
 </div>
 
 </div>
+</section>
+
+<section>
+<h2 class="section-title">Certifications</h2>
+
+<div class="card-container">
+<div class="card">Nutanix Certified Professional (NCP)</div>
+<div class="card">Microsoft Certifications</div>
+</div>
+
+</section>
+
+<section>
+<h2 class="section-title">Contact</h2>
+
+<p>Email: yourmail@domain.com</p>
+<p>LinkedIn: linkedin.com/in/aslamee-jahir</p>
+
+</section>
 
 <footer>
-© 2026 Aslamee Jahir | Portfolio
+© 2026 Aslamee Jahir Portfolio
 </footer>
 
 </body>
